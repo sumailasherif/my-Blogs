@@ -1,105 +1,65 @@
-/* Dark Glassmorphism Cards */
-.glass-card {
-  background: rgba(22, 27, 34, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
+document.addEventListener('DOMContentLoaded', () => {
 
-/* Contact Details Icons */
-.contact-icon-box {
-  width: 38px;
-  height: 38px;
-  background: rgba(0, 230, 118, 0.1);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-}
+  // 1. Initialize Bootstrap Carousel with Automatic Cycling
+  const heroCarousel = document.querySelector('#heroCarousel');
+  if (heroCarousel) {
+    new bootstrap.Carousel(heroCarousel, {
+      interval: 3500,
+      ride: 'carousel',
+      pause: 'hover'
+    });
+  }
 
-.hover-emerald:hover {
-  color: #00e676 !important;
-  transition: color 0.2s ease;
-}
+  // 2. Newsletter Subscription Form Handler
+  const newsletterForm = document.getElementById('newsletterForm');
+  const newsletterEmail = document.getElementById('newsletterEmail');
+  const newsletterFeedback = document.getElementById('newsletterFeedback');
 
-/* Social Circles */
-.social-circle {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #a0aec0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: all 0.25s ease;
-}
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const emailValue = newsletterEmail.value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-.social-circle:hover {
-  background: #00e676;
-  color: #0d1117;
-  border-color: #00e676;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 230, 118, 0.3);
-}
+      if (!emailValue || !emailPattern.test(emailValue)) {
+        newsletterFeedback.className = 'mt-2 small text-danger';
+        newsletterFeedback.textContent = 'Please enter a valid email address.';
+        return;
+      }
 
-/* Form Controls */
-.bg-dark-input {
-  background-color: rgba(13, 17, 23, 0.9) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
+      // Simulated success state
+      newsletterFeedback.className = 'mt-2 small text-success';
+      newsletterFeedback.textContent = 'Thank you for subscribing! Check your inbox soon.';
+      newsletterEmail.value = '';
 
-.form-control-custom {
-  background-color: rgba(13, 17, 23, 0.9) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  color: #f0f6fc !important;
-  transition: all 0.2s ease;
-}
+      setTimeout(() => {
+        newsletterFeedback.textContent = '';
+      }, 5000);
+    });
+  }
 
-.form-control-custom:focus {
-  border-color: #00e676 !important;
-  box-shadow: 0 0 0 0.25rem rgba(0, 230, 118, 0.15) !important;
-}
+  // 3. Dynamic Navbar Active Item Highlighting on Scroll
+  const sections = document.querySelectorAll('section[id], main[id]');
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-.form-control-custom::placeholder {
-  color: #6e7681;
-}
+  window.addEventListener('scroll', () => {
+    let currentSection = '';
 
-/* Submit Button Gradient */
-.btn-success-gradient {
-  background: linear-gradient(135deg, #00e676 0%, #00b0ff 100%);
-  border: none;
-  color: #0d1117;
-  transition: all 0.3s ease;
-}
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
 
-.btn-success-gradient:hover {
-  opacity: 0.95;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 230, 118, 0.3);
-  color: #000;
-}
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+      }
+    });
+  });
 
-/* Quick Nav Pills */
-.quick-link-pill {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #8b949e;
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: all 0.2s ease;
-}
-
-.quick-link-pill:hover {
-  background: rgba(0, 230, 118, 0.1);
-  border-color: #00e676;
-  color: #00e676;
-  transform: translateY(-1px);
-}
+});

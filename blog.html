@@ -3,355 +3,465 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sheriff Mohammed | Tech & Venture Journal</title>
+  <title>The BizPulse | Entrepreneurship & Business Insights</title>
   
-  <!-- Bootstrap 5 CSS & Bootstrap Icons CDN -->
+  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/blog.css">
+  
 </head>
-<body class="bg-dark text-light">
+<body>
 
-  <!-- Ambient Glowing Background Orbs -->
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
-  <div class="ambient-glow glow-3"></div>
-
-  <!-- Navbar -->
-  <header class="navbar navbar-expand-lg sticky-top custom-navbar">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2 logo-glow" href="#">
-        <span class="logo-mark"><i class="bi bi-rocket-takeoff-fill"></i></span>
-        <span class="logo-text">Sheriff's<span class="text-accent">Journal</span></span>
+  <!-- Navigation Bar -->
+  <header class="header sticky-top border-bottom shadow-sm">
+    <div class="container-xl d-flex align-items-center justify-content-between py-2">
+      
+      <!-- Logo -->
+      <a href="#home" class="logo text-decoration-none">
+        <h1 class="m-0" style="color: #0F172A; font-weight: 800; font-size: 1.75rem;">The BizPulse<span style="color: #2563EB;">.</span></h1>
       </a>
-      <button class="navbar-toggler border-0 text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-        <i class="bi bi-list fs-2"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#articles">Articles</a></li>
-          <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
-          <li class="nav-item ms-lg-2">
-            <a href="#newsletter" class="btn btn-gradient btn-sm rounded-pill px-4">
-              <i class="bi bi-bell-fill me-1"></i> Subscribe
-            </a>
-          </li>
-        </ul>
+
+      <!-- Main Navigation Links -->
+      <nav class="navbar navbar-expand-lg p-0">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-lg-1 custom-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#opportunities">Opportunities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#venture-capital">Venture Capital</a></li>
+            <li class="nav-item"><a class="nav-link" href="#scaling">Scaling</a></li>
+            <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
+            <li class="nav-item"><a class="nav-link" href="#market-trends">Trends</a></li>
+            <li class="nav-item"><a class="nav-link" href="#disruption">Disruption</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Social Icons Header -->
+      <div class="header-social-links d-none d-lg-flex align-items-center gap-3">
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter" style="color: #64748B;"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" style="color: #0A66C2;"><i class="bi bi-linkedin"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube" style="color: #FF0000;"><i class="bi bi-youtube"></i></a>
       </div>
+
     </div>
   </header>
 
-  <!-- Clean Hero Bio Section -->
-  <section class="py-5" id="about">
-    <div class="container">
-      <div class="bio-card glass-panel p-4 p-md-5 rounded-4 position-relative overflow-hidden">
-        <div class="row align-items-center g-4">
-          <div class="col-auto text-center position-relative">
-            <div class="avatar-ring position-relative d-inline-block">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=cro" alt="Sheriff Mohammed" class="rounded-circle bio-avatar">
-              <span class="online-indicator pulse-animation" title="Available for collaboration"></span>
-            </div>
-          </div>
-          <div class="col">
-            <div class="d-inline-flex align-items-center gap-2 badge-glow badge-cyber mb-2">
-              <i class="bi bi-stars"></i> Tech & Entrepreneurship Hub
-            </div>
-            <h1 class="display-5 fw-bold mb-3">Hi, I'm <span class="text-gradient animated-gradient">Sheriff Mohammed</span>.</h1>
-            <p class="text-secondary lead fs-6 mb-4 max-w-700">
-              I write about autonomous AI systems, tech entrepreneurship, startup strategies, and modern full-stack web architecture. Welcome to my engineering journal.
-            </p>
-            <div class="d-flex flex-wrap gap-4 align-items-center">
-              <div class="d-flex align-items-center gap-2">
-                <span class="stat-num text-gradient">6+</span>
-                <span class="stat-label text-muted fs-7">Deep Dives</span>
+  <main id="home">
+    
+    <!-- Hero Slider & Profile Sidebar Section -->
+    <section class="hero-section py-5 bg-light">
+      <div class="container-xl">
+        <div class="row g-4 align-items-center">
+
+          <!-- Image Carousel -->
+          <div class="col-lg-8">
+            <div id="heroCarousel" class="carousel slide carousel-fade rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
               </div>
-              <div class="stat-divider"></div>
-              <div class="d-flex align-items-center gap-2">
-                <span class="stat-num text-gradient">2</span>
-                <span class="stat-label text-muted fs-7">Active Ventures</span>
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="4000">
+                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 hero-img" alt="Global Market Strategy">
+                  <div class="carousel-caption d-none d-md-block text-start p-4 bg-dark-gradient rounded">
+                    <span class="badge bg-primary mb-2" style="font-size: 0.85rem; padding: 6px 12px;">FEATURED STRATEGY</span>
+                    <h2 style="font-size: 1.75rem; font-weight: 700;">Capitalizing on Global Business Opportunities</h2>
+                    <p style="font-size: 0.95rem; opacity: 0.9;">Unlocking dynamic market shifts, high-growth sectors, and international expansion frameworks.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 hero-img" alt="Venture Capital">
+                  <div class="carousel-caption d-none d-md-block text-start p-4 bg-dark-gradient rounded">
+                    <span class="badge bg-success mb-2" style="font-size: 0.85rem; padding: 6px 12px;">VENTURE CAPITAL</span>
+                    <h2 style="font-size: 1.75rem; font-weight: 700;">Demystifying Series A to Unicorn Funding</h2>
+                    <p style="font-size: 0.95rem; opacity: 0.9;">Key pitching insights, valuation metrics, and fundraising strategy for founders.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                  <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" class="d-block w-100 hero-img" alt="Executive Leadership">
+                  <div class="carousel-caption d-none d-md-block text-start p-4 bg-dark-gradient rounded">
+                    <span class="badge bg-warning text-dark mb-2" style="font-size: 0.85rem; padding: 6px 12px;">LEADERSHIP</span>
+                    <h2 style="font-size: 1.75rem; font-weight: 700;">Executive Governance & Team Scalability</h2>
+                    <p style="font-size: 0.95rem; opacity: 0.9;">Building resilient organizational cultures and managing high-performing enterprise teams.</p>
+                  </div>
+                </div>
+
               </div>
-              <div class="stat-divider"></div>
-              <div class="d-flex align-items-center gap-2">
-                <span class="stat-num text-gradient">Weekly</span>
-                <span class="stat-label text-muted fs-7">Articles</span>
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Profile Card -->
+          <div class="col-lg-4">
+            <div class="card profile-card border-0 shadow-sm p-4 text-center rounded-4" style="background-color: #FFFFFF;">
+              <img src="assets/deen.jpg" alt="Author Profile" class="rounded-circle profile-img mx-auto mb-3 shadow" style="width: 100px; height: 100px; object-fit: cover;">
+              <h3 class="mb-1 fw-bold" style="color: #0F172A; font-size: 1.35rem;">Sherif Sumaila</h3>
+              <p class="fw-bold mb-3" style="color: #2563EB; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">Founder & Tech Entrepreneur</p>
+              
+              <div class="text-start mb-3" style="font-size: 0.85rem; color: #475569; line-height: 1.5;">
+                <p class="mb-2">
+                  Sherif Sumaila is an entrepreneur building high-impact, AI-driven solutions and sustainable logistics. He is the <b class="deep">Founder</b> of <b class="deep">Grabbit Express, a 100% electric</b>, zero-carbon last-mile delivery fleet in Mauritius advancing <b class="deep">UN SDG 11 (Sustainable Cities and Communities) and UN SDG 13 (Climate Action)</b>. He is also the <b class="deep">Co-Founder of Loudicles</b>, an <b class="deep">AI-driven EdTech</b> platform in Ghana that leverages the <b class="deep">Feynman technique</b> to automate personalized learning and support <b class="deep">UN SDG 4</b> (Quality Education).</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content Area -->
-  <main class="container py-4" id="articles">
-
-    <!-- Category Filter Bar -->
-    <div class="filter-wrapper p-2 rounded-pill glass-panel mb-5 d-flex align-items-center gap-2 overflow-x-auto">
-      <span class="filter-label text-uppercase text-muted fw-bold fs-7 ps-3 d-none d-md-inline"><i class="bi bi-funnel"></i> Topics:</span>
-      <div class="d-flex gap-2 filter-pills">
-        <button class="btn btn-pill active"><i class="bi bi-grid-fill me-1"></i> All</button>
-        <button class="btn btn-pill"><i class="bi bi-cpu me-1"></i> AI & Agents</button>
-        <button class="btn btn-pill"><i class="bi bi-lightbulb me-1"></i> Entrepreneurship</button>
-        <button class="btn btn-pill"><i class="bi bi-code-slash me-1"></i> JavaScript</button>
-        <button class="btn btn-pill"><i class="bi bi-terminal me-1"></i> Backend</button>
-        <button class="btn btn-pill"><i class="bi bi-palette me-1"></i> UI & CSS</button>
-      </div>
-    </div>
-
-    <!-- Featured Post -->
-    <article class="featured-card glass-panel rounded-4 overflow-hidden mb-5 position-relative">
-      <div class="row g-0">
-        <div class="col-lg-7 featured-img-wrapper position-relative overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" class="img-fluid h-100 w-100 object-fit-cover featured-img" alt="AI Governance">
-          <span class="badge badge-accent badge-ai position-absolute top-0 start-0 m-3"><i class="bi bi-fire me-1"></i> Featured Article</span>
-        </div>
-        <div class="col-lg-5 p-4 p-md-5 d-flex flex-column justify-content-center">
-          <div class="d-flex align-items-center gap-2 text-muted fs-7 mb-2">
-            <span class="text-cyan fw-semibold"><i class="bi bi-robot"></i> AI Policy</span>
-            <span>•</span>
-            <span>6 min read</span>
-            <span>•</span>
-            <span>Jul 2026</span>
-          </div>
-          <h2 class="h3 fw-bold mb-3 hover-text-gradient">Autonomous Agents & AI Governance in 2026</h2>
-          <p class="text-secondary fs-6 mb-4">
-            Exploring how AI transitions from passive language models to proactive collaborative agents while establishing safety guidelines and scalable execution frameworks.
-          </p>
-          <div class="d-flex align-items-center justify-content-between pt-3 border-top border-secondary-subtle">
-            <div class="d-flex align-items-center gap-2">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" class="rounded-circle author-thumb" alt="Sheriff">
-              <div>
-                <span class="d-block fw-bold fs-7">Sheriff Mohammed</span>
-                <span class="d-block text-muted fs-8">Founder & Lead Tech</span>
+              
+              <div class="d-flex justify-content-center gap-3 my-2 fs-5">
+                <a href="https://linkedin.com" style="color: #0A66C2;"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com" style="color: #1DA1F2;"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://youtube.com" style="color: #FF0000;"><i class="bi bi-youtube"></i></a>
               </div>
+
+              <!-- Portfolio Button -->
+              <a href="https://sumailasherif.github.io/My-Portforlio/" target="_blank" class="btn w-100 rounded-pill mt-2" style="border: 2px solid #0F172A; color: #0F172A; font-weight: 600; font-size: 0.9rem;">
+                <i class="bi bi-briefcase me-2"></i>View Founder Portfolio
+              </a>
             </div>
-            <a href="#" class="btn btn-link text-accent fw-bold text-decoration-none p-0">
-              Read Essay <i class="bi bi-arrow-right animated-arrow"></i>
-            </a>
           </div>
+
         </div>
-      </div>
-    </article>
-
-    <!-- Articles Feed Header -->
-    <div class="d-flex justify-content-between align-items-end mb-4">
-      <div>
-        <h2 class="h4 fw-bold mb-1 text-light"><i class="bi bi-journal-bookmark-fill text-accent me-2"></i>Recent Publications</h2>
-        <p class="text-secondary fs-7 mb-0">In-depth breakdowns of software engineering, UI design, and tech entrepreneurship.</p>
-      </div>
-    </div>
-
-    <!-- Article Cards Grid -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-
-      <!-- Card 1: Entrepreneurship -->
-      <div class="col">
-        <article class="card h-100 blog-card glass-panel border-0 rounded-4 overflow-hidden position-relative">
-          <div class="card-img-wrapper position-relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="Entrepreneurship">
-            <span class="badge badge-accent badge-entrepreneur position-absolute top-0 start-0 m-3">Entrepreneurship</span>
-          </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <div class="text-muted fs-7 mb-2">Jul 20, 2026 • 5 min read</div>
-            <h3 class="card-title h5 fw-bold mb-3 hover-text-gradient">Tech Entrepreneurship & Product Validation</h3>
-            <p class="card-text text-secondary fs-7 mb-4 flex-grow-1">Insights into launching tech startups, identifying market friction, agile prototyping, and building scalable business models.</p>
-            <div class="pt-3 border-top border-secondary-subtle">
-              <a href="#" class="btn-link-custom text-emerald fw-bold text-decoration-none fs-7">
-                Read Article <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Card 2: JS -->
-      <div class="col">
-        <article class="card h-100 blog-card glass-panel border-0 rounded-4 overflow-hidden position-relative">
-          <div class="card-img-wrapper position-relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="JavaScript">
-            <span class="badge badge-accent badge-js position-absolute top-0 start-0 m-3">JavaScript</span>
-          </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <div class="text-muted fs-7 mb-2">Jul 15, 2026 • 8 min read</div>
-            <h3 class="card-title h5 fw-bold mb-3 hover-text-gradient">Asynchronous JS & Event Loop Mastery</h3>
-            <p class="card-text text-secondary fs-7 mb-4 flex-grow-1">Mastering closures, promises, async/await patterns, and non-blocking event loop execution for full-stack applications.</p>
-            <div class="pt-3 border-top border-secondary-subtle">
-              <a href="#" class="btn-link-custom text-amber fw-bold text-decoration-none fs-7">
-                Read Article <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Card 3: PHP -->
-      <div class="col">
-        <article class="card h-100 blog-card glass-panel border-0 rounded-4 overflow-hidden position-relative">
-          <div class="card-img-wrapper position-relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" alt="PHP">
-            <span class="badge badge-accent badge-php position-absolute top-0 start-0 m-3">PHP 8+</span>
-          </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <div class="text-muted fs-7 mb-2">Jul 10, 2026 • 5 min read</div>
-            <h3 class="card-title h5 fw-bold mb-3 hover-text-gradient">Modern PHP 8+ Architecture & Design</h3>
-            <p class="card-text text-secondary fs-7 mb-4 flex-grow-1">Unlocking strict typing, robust object-oriented programming, attributes, and high-performance backend API design.</p>
-            <div class="pt-3 border-top border-secondary-subtle">
-              <a href="#" class="btn-link-custom text-purple fw-bold text-decoration-none fs-7">
-                Read Article <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Card 4: CSS -->
-      <div class="col">
-        <article class="card h-100 blog-card glass-panel border-0 rounded-4 overflow-hidden position-relative">
-          <div class="card-img-wrapper position-relative overflow-hidden">
-            <img src="assets/divas.jpg" class="card-img-top object-fit-cover" alt="CSS Grid">
-            <span class="badge badge-accent badge-css position-absolute top-0 start-0 m-3">CSS Grid</span>
-          </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <div class="text-muted fs-7 mb-2">Jul 02, 2026 • 5 min read</div>
-            <h3 class="card-title h5 fw-bold mb-3 hover-text-gradient">CSS Grid & Subgrid Layout Mastery</h3>
-            <p class="card-text text-secondary fs-7 mb-4 flex-grow-1">Designing fluid, responsive multi-dimensional user interfaces with native CSS layout engines and container queries.</p>
-            <div class="pt-3 border-top border-secondary-subtle">
-              <a href="#" class="btn-link-custom text-cyan fw-bold text-decoration-none fs-7">
-                Read Article <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Card 5: HTML -->
-      <div class="col">
-        <article class="card h-100 blog-card glass-panel border-0 rounded-4 overflow-hidden position-relative">
-          <div class="card-img-wrapper position-relative overflow-hidden">
-            <img src="assets/ai.jpg" class="card-img-top object-fit-cover" alt="HTML">
-            <span class="badge badge-accent badge-html position-absolute top-0 start-0 m-3">HTML5</span>
-          </div>
-          <div class="card-body p-4 d-flex flex-column">
-            <div class="text-muted fs-7 mb-2">Jun 25, 2026 • 3 min read</div>
-            <h3 class="card-title h5 fw-bold mb-3 hover-text-gradient">Semantic HTML5 & Accessibility</h3>
-            <p class="card-text text-secondary fs-7 mb-4 flex-grow-1">Building accessible, search-engine-optimized web applications with clean structural hierarchy and ARIA roles.</p>
-            <div class="pt-3 border-top border-secondary-subtle">
-              <a href="#" class="btn-link-custom text-rose fw-bold text-decoration-none fs-7">
-                Read Article <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-    </div>
-
-    <!-- Newsletter Card -->
-    <section class="newsletter-panel glass-panel rounded-4 p-4 p-md-5 text-center my-5 position-relative overflow-hidden" id="newsletter">
-      <div class="newsletter-glow"></div>
-      <div class="position-relative z-1 max-w-600 mx-auto">
-        <div class="badge-glow badge-cyber mb-3 d-inline-block">
-          <i class="bi bi-envelope-check-fill me-1"></i> Weekly Dispatch
-        </div>
-        <h2 class="h3 fw-bold text-light mb-3">Join the Tech & Venture Newsletter</h2>
-        <p class="text-secondary fs-6 mb-4">Get weekly insights on software architecture, AI advancements, and startup execution directly in your inbox.</p>
-        
-        <form class="row g-2 justify-content-center" onsubmit="event.preventDefault();">
-          <div class="col-12 col-sm-8">
-            <input type="email" class="form-control form-control-custom rounded-pill px-4" placeholder="Enter your email address..." required>
-          </div>
-          <div class="col-12 col-sm-4">
-            <button type="submit" class="btn btn-gradient rounded-pill w-100 fw-bold">
-              Subscribe <i class="bi bi-send-fill ms-1"></i>
-            </button>
-          </div>
-        </form>
-        <p class="text-muted fs-8 mt-3 mb-0"><i class="bi bi-shield-lock me-1"></i> No spam. Unsubscribe anytime.</p>
       </div>
     </section>
 
+    <!-- Detailed Topics Section -->
+    <div class="container-xl py-5">
+
+      <!-- Opportunities Section -->
+      <section id="opportunities" class="topic-section mb-5 pt-4">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Entrepreneurial Opportunities">
+          </div>
+          <div class="col-md-7">
+            <span class="badge mb-2 px-3 py-2" style="background-color: #DBEAFE; color: #1E40AF; font-weight: 700; letter-spacing: 0.5px;">MARKET OPPORTUNITIES</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0F172A; font-size: 2.1rem; line-height: 1.25;">Identifying High-Growth Markets in Uncharted Economic Landscapes</h2>
+            
+            <p style="color: #334155; font-weight: 600; font-size: 1.1rem; line-height: 1.7;">
+              Identifying profitable business opportunities is both an analytical science and a creative discipline. In today’s rapidly shifting global economy, founders who succeed are those who train themselves to see structural gaps where others only see volatility or market saturation.
+            </p>
+            
+            <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+              The cornerstone of identifying lucrative opportunities lies in dissecting systemic inefficiencies and shifting consumer expectations. Modern entrepreneurs must look beyond superficial trends to examine structural market changes. Technological advancements, regulatory changes, and evolving demographic preferences regularly create fresh economic terrain...
+            </p>
+
+            <!-- Collapsible Extra Content -->
+            <div id="more-opportunities" class="read-more-content">
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Validation is the critical bridge between a promising market opportunity and a viable commercial venture. Far too many entrepreneurs waste significant capital building solutions for problems that users do not actually care enough to pay for. Strategic opportunity assessment demands rigorous field validation: conducting targeted customer interviews, releasing low-fidelity minimal viable products (MVPs), and measuring willingness-to-pay early in the discovery cycle. By relying on concrete behavioral metrics rather than polite positive feedback, founders can validate true demand, refine their value proposition, and establish defensible market positioning that mitigates risk while maximizing potential return on investment.
+              </p>
+
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Furthermore, evaluating market size through Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) calculations ensures that an opportunity can justify the capital and effort required to pursue it. Sustainable business models do not merely exploit transient gaps; they build deep defensibility through network effects, proprietary operational efficiencies, or unique distribution channels. As global commerce becomes increasingly interconnected, those who build adaptable, customer-centric frameworks designed to capitalize on emerging market dynamics will consistently lead the next generation of industry transformation.
+              </p>
+            </div>
+
+            <!-- Compact Read Button -->
+            <button class="read-more-btn" onclick="toggleReadMore('more-opportunities', this)">
+              <span>Read Article</span> <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" style="border-top: 2px solid #E2E8F0; opacity: 1;">
+
+      <!-- Venture Capital Section -->
+      <section id="venture-capital" class="topic-section mb-5 pt-4">
+        <div class="row align-items-center g-4 flex-md-row-reverse">
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Venture Capital & Investment">
+          </div>
+          <div class="col-md-7">
+            <span class="badge mb-2 px-3 py-2" style="background-color: #DCFCE7; color: #166534; font-weight: 700; letter-spacing: 0.5px;">VENTURE CAPITAL</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0F172A; font-size: 2.1rem; line-height: 1.25;">Mastering the Mechanics of Venture Funding and Capital Allocation</h2>
+            
+            <p style="color: #15803D; font-weight: 600; font-size: 1.1rem; line-height: 1.7;">
+              Securing institutional capital is rarely about polished presentations alone; it is fundamentally an exercise in risk mitigation, alignment of incentives, and demonstrating exceptional unit economics to venture capitalists.
+            </p>
+
+            <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+              Navigating the fundraising ecosystem requires an intimate understanding of investor psychology across distinct stages of maturity. From pre-seed angel syndicates to institutional Series A and growth-stage private equity, each investor class evaluates opportunity through a unique lens...
+            </p>
+
+            <!-- Collapsible Extra Content -->
+            <div id="more-vc" class="read-more-content">
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Effective capital allocation post-fundraising is what separates durable enterprises from high-profile failures. Raising capital is a liability until it is translated into sustainable enterprise value. Successful founders treat capital as a catalyst to de-risk key business assumptions rather than a tool to subsidize inefficient growth. Establishing clear burn-rate benchmarks, optimizing runway extensions, and deploying funds strategically into high-ROI activities—such as core product engineering and repeatable go-to-market channels—ensures that the company retains leverage when preparing for subsequent funding rounds or strategic exit opportunities.
+              </p>
+
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Equally critical is mastering term sheet negotiations, governance structures, and cap table management. Founders must look beyond top-line valuation figures to analyze liquidation preferences, anti-dilution provisions, and board control mechanisms. A poorly structured funding round can restrict future operational flexibility or severely diminish founder equity upon exit. By fostering competitive tension among prospective investors and seeking experienced legal counsel, entrepreneurs can build capital partnerships that provide strategic mentorship, regulatory access, and long-term financial stability without compromising governance or control.
+              </p>
+            </div>
+
+            <!-- Compact Read Button -->
+            <button class="read-more-btn" onclick="toggleReadMore('more-vc', this)">
+              <span>Read Article</span> <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" style="border-top: 2px solid #E2E8F0; opacity: 1;">
+
+      <!-- Scaling & Growth Section -->
+      <section id="scaling" class="topic-section mb-5 pt-4">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Scaling Business Operations">
+          </div>
+          <div class="col-md-7">
+            <span class="badge mb-2 px-3 py-2" style="background-color: #FEF3C7; color: #92400E; font-weight: 700; letter-spacing: 0.5px;">SCALING & GROWTH</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0F172A; font-size: 2.1rem; line-height: 1.25;">Architecting Scalable Operations and Sustainable Revenue Engines</h2>
+            
+            <p style="color: #B45309; font-weight: 600; font-size: 1.1rem; line-height: 1.7;">
+              Transitioning a startup from early product-market fit to an enterprise-grade growth machine requires systematic operational engineering, robust customer retention frameworks, and repeatable distribution channels.
+            </p>
+
+            <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+              The transition from initial traction to hyper-growth demands a shift from heroic individual effort to institutionalized operational processes. Premature scaling is one of the leading causes of startup failure; rushing to expand marketing spend before establishing true product-market fit only accelerates cash burn...
+            </p>
+
+            <!-- Collapsible Extra Content -->
+            <div id="more-scaling" class="read-more-content">
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Unit economics serve as the ultimate operational truth during organizational expansion. A business cannot scale inefficient unit economics and expect volume to solve underlying profitability deficits. Scaling executives must relentlessly monitor gross margins, payback periods, and churn dynamics. Reducing customer churn through structured customer success initiatives and systematic onboarding workflows often yields far higher net-present-value than spending heavily to acquire new accounts. High-growth enterprises build robust data flywheels that turn user insights into product enhancements, driving multi-product adoption and increasing expansion revenue over time.
+              </p>
+
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Operational excellence also encompasses supply chain management, automated workflows, and standardized standard operating procedures (SOPs). As team size doubles and triples, communication debt accumulates rapidly. Implementing clear cross-functional frameworks, key performance indicators (KPIs), and objective key results (OKRs) keeps disparate departments aligned on strategic milestones. By balancing standardized operational rigor with an entrepreneurial culture of experimentation, organizations build sustainable growth engines capable of adapting to market disruptions while consistently delivering enterprise-grade quality.
+              </p>
+            </div>
+
+            <!-- Compact Read Button -->
+            <button class="read-more-btn" onclick="toggleReadMore('more-scaling', this)">
+              <span>Read Article</span> <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" style="border-top: 2px solid #E2E8F0; opacity: 1;">
+
+      <!-- Executive Leadership Section -->
+      <section id="leadership" class="topic-section mb-5 pt-4">
+        <div class="row align-items-center g-4 flex-md-row-reverse">
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Executive Leadership">
+          </div>
+          <div class="col-md-7">
+            <span class="badge mb-2 px-3 py-2" style="background-color: #E0E7FF; color: #3730A3; font-weight: 700; letter-spacing: 0.5px;">EXECUTIVE LEADERSHIP</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0F172A; font-size: 2.1rem; line-height: 1.25;">Cultivating Executive Vision, Culture, and Governance in Modern Organizations</h2>
+            
+            <p style="color: #4338CA; font-weight: 600; font-size: 1.1rem; line-height: 1.7;">
+              Effective executive leadership requires balancing long-term strategic vision with short-term operational execution, building psychological safety, and fostering high-accountability organizational cultures.
+            </p>
+
+            <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+              The role of a founder or Chief Executive shifts dramatically as an organization evolves from a small core team into a multi-tiered corporate entity. In the early stages, leadership is hands-on and tactical; at scale, leadership becomes strategic and cultural...
+            </p>
+
+            <!-- Collapsible Extra Content -->
+            <div id="more-leadership" class="read-more-content">
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Organizational culture is not a passive side effect; it is an active operational choice that directly impacts business performance and talent retention. High-performing executive teams build environments grounded in radical transparency, constructive dissent, and psychological safety. Encouraging calculated risk-taking while treating failure as an informative data point accelerates organizational learning. When employees understand the 'why' behind corporate initiatives and see clear alignment between company values and executive decisions, engagement deepens, driving resilience during periods of economic downturn or market restructuring.
+              </p>
+
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Finally, corporate governance, ethical decision-making, and stakeholder management are integral pillars of executive stewardship. Leaders must navigate complex regulatory landscapes, board of directors expectations, and ESG (Environmental, Social, and Governance) commitments without losing sight of customer value delivery. Executive communication must be authentic, precise, and consistent across internal and external audiences. By maintaining strict ethical standards and embodying corporate vision through personal accountability, executives cultivate lasting trust, resilience, and industry leadership across long horizons.
+              </p>
+            </div>
+
+            <!-- Compact Read Button -->
+            <button class="read-more-btn" onclick="toggleReadMore('more-leadership', this)">
+              <span>Read Article</span> <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" style="border-top: 2px solid #E2E8F0; opacity: 1;">
+
+      <!-- Market Trends Section -->
+      <section id="market-trends" class="topic-section mb-5 pt-4">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Global Market Trends">
+          </div>
+          <div class="col-md-7">
+            <span class="badge mb-2 px-3 py-2" style="background-color: #CFFAFE; color: #155E75; font-weight: 700; letter-spacing: 0.5px;">MARKET TRENDS</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0F172A; font-size: 2.1rem; line-height: 1.25;">Decoding Macroeconomic Dynamics and Global Industry Shifts</h2>
+            
+            <p style="color: #0891B2; font-weight: 600; font-size: 1.1rem; line-height: 1.7;">
+              Thriving in modern commerce requires a deep understanding of macroeconomic trends, geopolitical shifts, inflationary pressures, and digital transformation drivers that shape market demand.
+            </p>
+
+            <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+              Business operates within a complex web of global macroeconomic forces. Interest rate fluctuations, supply chain realignments, and shifting geopolitical alliances directly dictate capital availability, resource pricing, and consumer spending power...
+            </p>
+
+            <!-- Collapsible Extra Content -->
+            <div id="more-trends" class="read-more-content">
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Digital transformation and technological convergence remain the primary catalysts reshaping modern industry structures. From artificial intelligence automation in logistics to fintech innovation in cross-border payments, digital adoption has moved from a competitive advantage to a baseline survival requirement. Traditional industries—such as healthcare, real estate, and manufacturing—are undergoing rapid modernization as legacy players form strategic partnerships with agile technology disruptors. Companies that harness real-time analytics, predictive modeling, and automated operations can respond to changing consumer sentiment far faster than bureaucratic competitors.
+              </p>
+
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Consumer behavior is undergoing a fundamental shift toward value-aligned purchasing, sustainability, and frictionless digital experiences. Today’s consumers demand radical supply chain transparency, environmental accountability, and personalized service delivery. Business models built on subscription access, circular economy principles, and seamless omnichannel interactions are capturing dominant market share. By embedding rigorous market research, continuous feedback loops, and dynamic forecasting into core business strategy, executives can navigate complex economic cycles and position their organizations to capture emerging market demand ahead of competitors.
+              </p>
+            </div>
+
+            <!-- Compact Read Button -->
+            <button class="read-more-btn" onclick="toggleReadMore('more-trends', this)">
+              <span>Read Article</span> <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-5" style="border-top: 2px solid #E2E8F0; opacity: 1;">
+
+      <!-- Market Disruption Section -->
+      <section id="disruption" class="topic-section mb-5 pt-4">
+        <div class="row align-items-center g-4 flex-md-row-reverse">
+          <div class="col-md-5">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow" alt="Market Disruption and Innovation">
+          </div>
+          <div class="col-md-7">
+            <span class="badge mb-2 px-3 py-2" style="background-color: #FEE2E2; color: #991B1B; font-weight: 700; letter-spacing: 0.5px;">MARKET DISRUPTION</span>
+            <h2 class="display-6 fw-bold mb-3" style="color: #0F172A; font-size: 2.1rem; line-height: 1.25;">Leveraging Disruptive Innovation to Overthrow Industry Incumbents</h2>
+            
+            <p style="color: #DC2626; font-weight: 600; font-size: 1.1rem; line-height: 1.7;">
+              Disruptive innovation is not merely about launching new technology; it is the strategic execution of business model reinvention that redefines value creation across stagnant industries.
+            </p>
+
+            <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+              Incumbent leaders in established industries are frequently victim to the innovator's dilemma: their existing profit margins, organizational complexity, and legacy infrastructure prevent them from effectively responding to low-cost, highly agile market entrants...
+            </p>
+
+            <!-- Collapsible Extra Content -->
+            <div id="more-disruption" class="read-more-content">
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Creating a culture of perpetual innovation requires building structural agility into the enterprise DNA. Organizations must systematically fund internal incubation, encourage cross-disciplinary research, and remain willing to cannibalize their own legacy revenue streams before competitors do so for them. Strategic mergers and acquisitions (M&A) also serve as a powerful vehicle for disruption, enabling mature companies to absorb emerging technology, acquire top-tier entrepreneurial talent, and integrate new distribution channels. Maintaining an aggressive offensive posture toward innovation ensures long-term market leadership in rapidly shifting technical environments.
+              </p>
+
+              <p style="color: #475569; font-size: 1rem; line-height: 1.8;">
+                Ultimately, successful market disruption transforms industry paradigms permanently. Whether through platform business models that connect fragmented buyers and suppliers, open-source ecosystems that dismantle proprietary monopolies, or automated AI platforms that eliminate traditional friction, disruptors redefine what customers consider acceptable baseline standards. Entrepreneurs who combine deep industry domain expertise with bold business model innovation will continue to drive global productivity, reshape industrial economic landscapes, and build the enterprise giants of tomorrow.
+              </p>
+            </div>
+
+            <!-- Compact Read Button -->
+            <button class="read-more-btn" onclick="toggleReadMore('more-disruption', this)">
+              <span>Read Article</span> <i class="bi bi-chevron-down"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <!-- Footer --><footer class="footer-custom border-top border-secondary-subtle py-5 bg-dark text-light">
-  <div class="container">
-    <div class="row g-4 mb-5 align-items-start">
-      
-      <!-- Brand & Description -->
-      <div class="col-12 col-lg-5">
-        <a class="d-inline-flex align-items-center gap-2 logo-glow text-decoration-none mb-3" href="#">
-          <span class="logo-mark"><i class="bi bi-rocket-takeoff-fill text-accent"></i></span>
-          <span class="logo-text text-white fw-bold fs-5">Sheriff's<span class="text-accent">Journal</span></span>
-        </a>
-        <p class="text-secondary fs-7 mb-0 max-w-350">
-          Documenting software engineering, AI innovations, and modern tech entrepreneurship.
-        </p>
-      </div>
-
-      <!-- Navigation Links -->
-      <div class="col-6 col-lg-3">
-        <h6 class="text-uppercase text-muted fw-bold fs-8 tracking-wider mb-3">Navigation</h6>
-        <ul class="list-unstyled d-flex flex-column gap-2 fs-7 mb-0">
-          <li>
-            <a href="#about" class="footer-link text-secondary text-decoration-none d-inline-flex align-items-center gap-2">
-              <i class="bi bi-chevron-right fs-8 text-accent"></i> About Me
-            </a>
-          </li>
-          <li>
-            <a href="#articles" class="footer-link text-secondary text-decoration-none d-inline-flex align-items-center gap-2">
-              <i class="bi bi-chevron-right fs-8 text-accent"></i> Articles
-            </a>
-          </li>
-          <li>
-            <a href="#newsletter" class="footer-link text-secondary text-decoration-none d-inline-flex align-items-center gap-2">
-              <i class="bi bi-chevron-right fs-8 text-accent"></i> Newsletter
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Topics / Badges -->
-      <div class="col-6 col-lg-4">
-        <h6 class="text-uppercase text-muted fw-bold fs-8 tracking-wider mb-3">Topics</h6>
-        <div class="d-flex flex-wrap gap-2 align-items-center">
-          <span class="badge bg-dark-subtle text-light border border-secondary border-opacity-50 px-2 py-1 fs-8 d-inline-flex align-items-center gap-1">
-            <i class="bi bi-cpu text-accent"></i> AI Research
-          </span>
-          <span class="badge bg-dark-subtle text-light border border-secondary border-opacity-50 px-2 py-1 fs-8 d-inline-flex align-items-center gap-1">
-            <i class="bi bi-lightbulb text-accent"></i> Entrepreneurship
-          </span>
-          <span class="badge bg-dark-subtle text-light border border-secondary border-opacity-50 px-2 py-1 fs-8 d-inline-flex align-items-center gap-1">
-            <i class="bi bi-code-slash text-accent"></i> Full-Stack Dev
-          </span>
+  <!-- Footer with Newsletter Subscription Form & Links -->
+  <footer class="footer bg-dark text-white pt-5 pb-4" style="background-color: #0F172A !important;">
+    <div class="container-xl">
+      <div class="row g-4 mb-5">
+        
+        <!-- About Column -->
+        <div class="col-lg-4 col-md-6">
+          <h3 class="text-white fw-bold mb-3" style="font-size: 1.8rem;">The BizPulse<span style="color: #2563EB;">.</span></h3>
+          <p class="text-white-50" style="font-size: 0.95rem; line-height: 1.6;">Empowering founders, investors, and corporate leaders with deep insights on entrepreneurship, venture capital, scaling operations, and global business trends.</p>
+          <div class="footer-social-links d-flex gap-3 fs-5 mt-3">
+            <a href="https://twitter.com" target="_blank" class="text-white-50"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://facebook.com" target="_blank" class="text-white-50"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-white-50"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="text-white-50"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" class="text-white-50"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
+
+        <!-- Links Column -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-white fw-semibold mb-3" style="font-size: 1.1rem;">Categories</h5>
+          <ul class="list-unstyled text-white-50" style="font-size: 0.95rem;">
+            <li class="mb-2"><a href="#opportunities" class="text-white-50 text-decoration-none">Opportunities</a></li>
+            <li class="mb-2"><a href="#venture-capital" class="text-white-50 text-decoration-none">Venture Capital</a></li>
+            <li class="mb-2"><a href="#scaling" class="text-white-50 text-decoration-none">Scaling</a></li>
+            <li class="mb-2"><a href="#leadership" class="text-white-50 text-decoration-none">Leadership</a></li>
+            <li class="mb-2"><a href="#market-trends" class="text-white-50 text-decoration-none">Trends</a></li>
+            <li class="mb-2"><a href="#disruption" class="text-white-50 text-decoration-none">Disruption</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Form Column -->
+        <div class="col-lg-6 col-md-12">
+          <div class="p-4 rounded-4" style="background-color: #1E293B; border: 1px solid #334155;">
+            <h4 class="text-white fw-bold mb-2" style="font-size: 1.3rem;">Subscribe to The BizPulse Intelligence</h4>
+            <p class="text-white-50 small mb-3">Get weekly executive briefings on market dynamics, deal flow metrics, and growth strategies delivered directly to your inbox.</p>
+            
+            <form id="newsletterForm" novalidate>
+              <div class="row g-2">
+                <div class="col-sm-8">
+                  <div class="input-group">
+                    <span class="input-group-text border-secondary text-white-50" style="background-color: #0F172A; border-color: #475569 !important;"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control text-white" id="newsletterEmail" placeholder="Enter your business email..." required style="background-color: #0F172A; border-color: #475569 !important;">
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <button type="submit" class="btn w-100 fw-semibold" style="background-color: #2563EB; color: #FFFFFF; border: none;">Subscribe</button>
+                </div>
+              </div>
+              <div id="newsletterFeedback" class="mt-2 small"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="pt-4 text-center text-white-50 small" style="border-top: 1px solid #334155;">
+        <p class="m-0">&copy; 2026 <strong>The BizPulse</strong>. All Rights Reserved. Designed for Business Leaders.</p>
       </div>
 
     </div>
+  </footer>
 
-    <!-- Bottom Bar (Copyright & Back-to-Top) -->
-    <div class="pt-4 border-top border-secondary-subtle d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 text-muted fs-8">
-      <div>
-        &copy; 2026 Sheriff Mohammed. Designed with Bootstrap 5 & Custom Modern CSS.
-      </div>
-      <div>
-        <a href="#" class="text-muted text-decoration-none d-inline-flex align-items-center gap-1 hover-text-accent">
-          <span>Back to top</span> <i class="bi bi-arrow-up-short fs-6"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
+  <!-- JavaScript for Toggle Functionality -->
+  <script>
+    function toggleReadMore(contentId, btn) {
+      var content = document.getElementById(contentId);
+      var textSpan = btn.querySelector('span');
+      var icon = btn.querySelector('i');
+      
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        textSpan.textContent = "Read Article";
+        icon.className = "bi bi-chevron-down";
+      } else {
+        content.style.display = "block";
+        textSpan.textContent = "Show Less";
+        icon.className = "bi bi-chevron-up";
+      }
+    }
+  </script>
 
-<!-- Bootstrap 5 JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="blog.js"></script>
 </body>
 </html>
